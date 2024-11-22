@@ -10,20 +10,23 @@
     "lint:eslint": "eslint --fix",
     "lint:format": "prettier --write --log-level warn \"src/**/*.{js,ts,json,tsx,css,less,vue,html,md}\"",
     "lint:stylelint": "stylelint \"**/*.{css,scss,vue,html}\" --fix",
-    "prepare": "husky install"
+    "prepare": "husky && husky install"
   },
   "dependencies": {
     "vue": "^3.5.12"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
     "@eslint/js": "^9.15.0",
+    "@types/node": "*",
     "@vitejs/plugin-vue": "^5.1.4",
     "eslint": "^9.15.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-vue": "^9.31.0",
     "globals": "^15.12.0",
-    "husky": "^8.0.0",
+    "husky": "^9.1.7",
     "postcss": "^8.4.49",
     "postcss-html": "^1.7.0",
     "prettier": "^3.3.3",
